@@ -1,0 +1,110 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /*font-family: "Passion One", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');/*font-family: "Sriracha", cursive;*/
+@font-face { 
+    font-family: 'cordelina';
+    src: url('/src/fonte/cordelina.otf') format(opentype);
+    font-weight: normal;
+}
+
+@media (max-width: 300px) {
+    section {
+        font-size: 2em; /* Tamanho para telas pequenas */
+    }
+}
+:root{ /*criadno uma variavel.*/
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; 
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", cursive;
+    --fonte4: 'cordelina', sans-serif;}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgb(121, 120, 119);
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--fonte4);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 6vw;
+}
+header p{
+    padding-bottom: 50px;
+    font-family: var(--fonte3);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgba(220, 245, 209, 0.555);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2vw;
+
+}
+section > p{
+    padding-bottom: 2em;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: aquamarine;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 6px 6px 13px 0px  rgba(0, 0, 0, 0.575);
+    background-size: cover;/*tamanho da imagem, cobre o espaço por completo*/
+    background-attachment: fixed;
+}
+section#img01{
+    background-image: url('/src/imagens/background001.jpg');
+    background-position: right center;
+
+}
+section#img02{
+    background-image: url('/src/imagens/background002.jpg');
+    background-position: right center;
+}
+footer > p {
+    font-family: var(--fonte3);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
