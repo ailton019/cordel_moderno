@@ -90,12 +90,12 @@ section.imagem{
     background-attachment: fixed;
 }
 section#img01{
-    background-image: url('/src/imagens/background001.jpg');
+    background-image: url('./src/imagens/background001.jpg');
     background-position: right center;
 
 }
 section#img02{
-    background-image: url('/src/imagens/background002.jpg');
+    background-image: url('./src/imagens/background002.jpg');
     background-position: right center;
 }
 footer > p {
